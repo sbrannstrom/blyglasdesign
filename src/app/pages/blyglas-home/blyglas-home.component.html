@@ -1,0 +1,139 @@
+<div class="w-full flex flex-col justify-center">
+
+  <div class="bg-white rounded-md">
+    <div class="max-w-7xl mx-auto pb-24 sm:pt-0 pt-8 sm:px-2 sm:pb-32 lg:px-4">
+      <div class="max-w-2xl mx-auto px-4 lg:max-w-none">
+        <div class="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
+          <div>
+            <p class="sm:text-5xl text-2xl font-extrabold tracking-tighter text-slate-800">
+              Ett traditionellt glasmästeri med antikvarisk inriktning
+            </p>
+            <p class="mt-4 text-gray-500 sm:text-lg text-base tracking-tight">
+              Glasmästeriet Blyglasdesign Luleå AB är ett
+              traditionellt glasmästeri från Luleå, Norrbotten med över 40 års
+              erfarenhet inom yrket. Vi arbetar primärt med traditionellt glasarbete samt tillverkning av blyinfattat
+              glas i
+              olika mönster och färger på beställning till både privat och offentlig miljö i hela Sverige.
+            </p>
+          </div>
+          <div class="aspect-w-3 aspect-h-2 bg-gray-100 rounded-lg overflow-hidden">
+            <img src="./assets/church.jpeg" alt="" class="object-center object-cover">
+          </div>
+        </div>
+        <div class="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
+          <div class="sm:flex lg:block">
+            <mat-card class="h-full">
+              <div class="sm:flex-shrink-0">
+                <img class="w-16 h-16" src="https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg" alt="">
+              </div>
+              <div class="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
+                <h3 class="text-sm font-medium text-gray-900">Auktoriserade Fönsterspecialister</h3>
+                <p class="mt-2 text-base text-gray-500">
+                  Vi är Auktoriserade Fönsterspecialister, klicka på knappen nedan för att läsa mer om vad det innebär
+                  och
+                  hur mycket du
+                  kan spara på att renovera dina fönster.
+                </p>
+                <br class="hidden sm:block">
+              </div>
+              <mat-card-actions>
+                <button mat-stroked-button routerLink="/blyglas/authorised" class="bg-sky-800 text-white">Mer
+                  information</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+
+          <div class="sm:flex lg:block">
+            <mat-card class="h-full">
+              <div class="sm:flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" stroke-width="1"
+                  stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M12 3c-3.866 0 -7 3.272 -7 7v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1 -1v-10c0 -3.728 -3.134 -7 -7 -7z" />
+                  <line x1="5" y1="13" x2="19" y2="13" />
+                  <line x1="12" y1="3" x2="12" y2="21" />
+                </svg>
+              </div>
+              <div class="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
+                <h3 class="text-sm font-medium text-gray-900">Sveriges Fönsterhantverkare</h3>
+                <p class="mt-2 text-base text-gray-500">
+                  Blyglasdesign är stolt medlem av Sveriges Fönsterhantverkare. Läs mer på deras hemsida:
+                </p>
+                <br class="hidden sm:block">
+                <br class="hidden sm:block">
+              </div>
+              <mat-card-actions>
+                <button mat-stroked-button (click)="openExternal()" target="_blank" class="bg-sky-800 text-white">Extern
+                  Länk</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+
+          <div class="sm:flex lg:block h-full">
+            <mat-card class="h-full">
+              <div class="sm:flex-shrink-0">
+                <img class="w-16 h-16" src="./assets/byggnadsvardinorr.png" alt="">
+              </div>
+              <div class="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
+                <h3 class="text-sm font-medium text-gray-900">Byggnadsvård Norr</h3>
+                <p class="mt-2 text-base text-gray-500">
+                  Vi är en del av Byggnadsvård Norr, mer information hittar ni på deras hemsida:
+                </p>
+                <br class="hidden sm:block">
+                <br class="hidden sm:block">
+                <br class="hidden sm:block">
+              </div>
+              <mat-card-actions>
+                <button mat-stroked-button (click)="openByggnadsvard()" target="_blank"
+                  class="bg-sky-800 text-white">Extern Länk</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <app-reasons></app-reasons>
+
+  <!-- TESTIMONIAL SECTION -->
+  <div class="bg-white pt-16 lg:py-24">
+    <div class="sm:pb-16 pb-20 bg-slate-800 lg:pb-0 lg:z-10 lg:relative rounded-sm">
+      <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
+        <div class="relative lg:-my-8">
+          <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+          <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+            <div
+              class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+              <img class="object-cover lg:h-full lg:w-full"
+                src="./assets/stock/trust.jpeg"
+                alt="">
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+          <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+            <blockquote>
+              <div>
+                <svg class="h-12 w-12 text-white opacity-25" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                  <path
+                    d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg>
+                <p class="mt-6 sm:text-2xl text-xl font-medium text-white">
+                  Glasmästeriet Blyglasdesign Luleå AB innehar högsta kredivärdighet (2016-2022), UC Guld, och är därav en trygg och
+                  solid partner att göra affärer med.
+                </p>
+              </div>
+              <footer class="mt-6">
+                <p class="text-base font-medium text-gray-50">UC AB Sverige</p>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

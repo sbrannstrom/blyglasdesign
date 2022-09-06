@@ -1,0 +1,160 @@
+<div class="min-h-full">
+  <div class="bg-sky-800 pb-32 header">
+    <nav class="bg-sky-800 z-40" id="sticky">
+      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="border-b border-gray-700">
+          <div class="flex items-center justify-between h-16 px-4 sm:px-0">
+            <div class="flex items-center">
+              <div class="flex-shrink-0 sm:hidden block">
+                <span class="text-white font-extrabold tracking-tight text-lg">
+                  Glasmästeriet Blyglasdesign i Luleå AB
+                </span>
+              </div>
+              <div class="hidden md:block">
+                <div class="flex items-baseline space-x-4">
+                  <a routerLink="/blyglas/home"
+                    class="text-gray-300 hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    routerLinkActive="bg-sky-900 text-white" aria-current="page">
+                    Hem
+                  </a>
+
+                  <a routerLink="/blyglas/about"
+                    class="text-gray-300 hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    routerLinkActive="bg-sky-900 text-white">
+                    Om Företaget
+                  </a>
+
+                  <a routerLink="/blyglas/authorised"
+                    class="text-gray-300 hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    routerLinkActive="bg-sky-900 text-white">
+                    Auktorisation
+                  </a>
+
+                  <a (click)="openContact()"
+                    class="text-gray-300 hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
+                    Kontakt
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- <div class="hidden md:block">
+              <div class="ml-4 flex items-center md:ml-6">
+                <button type="button" matTooltip="Kontakta oss"
+                  class="bg-sky-800 p-1 text-gray-400 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-sky-800 focus:ring-white">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M16 3h5m0 0v5m0-5l-6 6M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" />
+                  </svg>
+                </button>
+              </div>
+            </div> -->
+
+
+            <div class="-mr-2 flex md:hidden">
+              <!-- Mobile menu button -->
+              <button (click)="mobileMenuOpen = !mobileMenuOpen" type="button"
+                class="bg-sky-800 inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+
+                <svg *ngIf="!mobileMenuOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+
+                <svg *ngIf="mobileMenuOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="border-b border-sky-700 md:hidden" id="mobile-menu" *ngIf="mobileMenuOpen">
+        <div class="px-2 py-3 space-y-1 sm:px-3 mt-2" (click)="mobileMenuOpen = false">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a routerLink="/blyglas/home"
+            class="text-gray-300 hover:bg-sky-700 hover:text-white block px-3 py-4 rounded-md text-sm font-medium"
+            routerLinkActive="bg-sky-900 text-white" aria-current="page">
+            Hem
+          </a>
+
+          <a routerLink="/blyglas/about"
+            class="text-gray-300 hover:bg-sky-700 hover:text-white block px-3 py-4 rounded-md text-base font-medium"
+            routerLinkActive="bg-sky-900 text-white">
+            Om Företaget
+          </a>
+
+          <a routerLink="/blyglas/authorised"
+            class="text-gray-300 hover:bg-sky-700 hover:text-white block px-3 py-4 rounded-md text-base font-medium"
+            routerLinkActive="bg-sky-900 text-white">
+            Auktorisation
+          </a>
+
+          <a (click)="openContact()"
+            class="text-gray-300 hover:bg-sky-700 hover:text-white block px-3 py-4 rounded-md text-base font-medium cursor-pointer">
+            Kontakt
+          </a>
+        </div>
+      </div>
+    </nav>
+    <header class="py-10 sm:block hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:text-center sm:mt-16">
+        <p class="text-4xl font-bold text-white select-none">Glasmästeriet Blyglasdesign i Luleå AB</p>
+      </div>
+    </header>
+  </div>
+
+  <main class="-mt-32">
+    <div class="max-w-7xl mx-auto sm:pb-12 px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-lg shadow-md sm:py-6 sm:my-0 my-20 sm:px-6">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </main>
+
+  <div class="bg-white">
+    <div class="max-w-7xl mx-auto px-0">
+      <div class="bg-sky-800 sm:mx-8 sm:rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
+        <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+          <div class="lg:self-center">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+              <span class="block">Dags att renovera dina fönster?</span>
+              <span class="block">Kontakta oss nu.</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-indigo-200">
+              Ring, maila eller besök oss för mer information kring fönsterrenoveringar.
+            </p>
+            <a (click)="openContact()" class="cursor-pointer mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-sky-800 hover:bg-sky-50">Klicka Här</a>
+          </div>
+        </div>
+        <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+          <img class="transform translate-x-6 translate-y-6 rounded-md object-cover sm:object-center object-bottom sm:translate-x-16 lg:translate-y-20" src="./assets/stock/window5.jpeg" alt="App screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed bottom-10 right-1 sm:block hidden z-50">
+    <app-chat></app-chat>
+  </div>
+
+  <footer id="stickyFooter" class="z-40">
+    <div
+      class="w-full h-8 sm:h-10 bg-white flex flex-row justify-between items-center text-sky-800 text-xs sm:text-sm font-semibold">
+      <div class="sm:px-6">
+        Glasmästeriet Blyglasdesign Luleå AB
+      </div>
+      <div class="sm:px-6">
+        Org nr: 556888-6633
+      </div>
+    </div>
+  </footer>
+</div>
