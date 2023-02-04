@@ -24,6 +24,8 @@ import { BlyglasAuthorisedComponent } from './pages/blyglas-authorised/blyglas-a
 import { ContactComponent } from './components/contact/contact.component';
 import { ReasonsComponent } from './components/reasons/reasons.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { DiplomaComponent } from './components/diploma/diploma.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { ChatComponent } from './components/chat/chat.component';
     ContactComponent,
     ReasonsComponent,
     ChatComponent,
+    CardsComponent,
+    DiplomaComponent,
   ],
   imports: [
     BrowserModule,

@@ -21,10 +21,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-800;
+  @apply bg-sky-900;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-gray-600;
+  @apply bg-sky-800;
 }

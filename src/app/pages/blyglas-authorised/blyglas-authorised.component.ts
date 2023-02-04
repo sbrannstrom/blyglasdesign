@@ -36,4 +36,7 @@ export class BlyglasAuthorisedComponent implements OnInit {
     this.dialog.open(ContactComponent);
   }
 
+  openPdf() {
+    return window.open('./assets/forstudie.pdf', '_blank');
+  }
 }
